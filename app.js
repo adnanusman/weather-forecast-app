@@ -31,7 +31,7 @@ weatherapp.controller("forecastController", ["$scope", "$routeParams", "$resourc
 		// local scope variable = city variable from the cityService
 		$scope.city = cityService.city;
 
-		// route parameter day is equal to local scope variable for day - default parameter is set to 2 days.
+		// route parameter day is equal to local scope variable for day - default parameter is set to 3 days.
 		$scope.days = $routeParams.days || '3';
 
 		// calling data from external API and declaring callback so we get a reply.
